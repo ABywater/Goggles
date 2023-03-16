@@ -1,0 +1,35 @@
+! name: Obscure Code Websites
+! description: Boost more obscure code-related websites and discard top code-related websites
+! public: false
+! author: Your Name Here
+
+! Optional metadata attributes (fill in your own information)
+! homepage: https://your-homepage.com
+! issues: https://your-issue-reporting-url.com
+! avatar: #YOUR_HEX_COLOR_CODE
+! license: Your License Here
+
+! Discard results from top code-related websites
+$discard,site=stackoverflow.com
+$discard,site=github.com
+$discard,site=gitlab.com
+$discard,site=bitbucket.org
+$discard,site=sourceforge.net
+
+! Boost more obscure code-related websites
+/programming/$boost=5
+/coding/$boost=5
+/development/$boost=5
+/software/$boost=5
+/opensource/$boost=5
+/computer-science/$boost=5
+/tutorials/$boost=5
+/code-snippets/$boost=5
+/code-examples/$boost=5
+/programming-challenges/$boost=5
+
+! Downrank general technology websites that may not be focused on code
+/tech/$downrank=3
+/technology/$downrank=3
+/gadgets/$downrank=3
+/electronics/$downrank=3
